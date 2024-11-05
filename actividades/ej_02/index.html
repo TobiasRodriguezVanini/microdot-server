@@ -3,21 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actividad #</title>
+    <title>Actividad 2</title>
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/estilos.css">
 </head>
 <body>
     <header>
-        <h1>Actividad #</h1>
+        <h1>Actividad 2</h1>
     </header>
     <main>
+
+    <img src="images/sensei closs.jpg" alt="sensei closs" class="sensei">
+
+    <div class="led-control-container">
+        <img src="images/megadeth.jpg" alt="mega de mega de" class="mega">
+
+        <div id="outer">
+            <br /><br /><br />
+             <!-- Alternar el estado de los LEDs -->
+            <button onclick="toggleLED(1)">Toggle LED 1</button>
+            <button onclick="toggleLED(2)">Toggle LED 2</button>
+            <button onclick="toggleLED(3)">Toggle LED 3</button>
+        </div>
+    </div>
+
+    <script>
+        function toggleLed(led) {
+            fetch(`/toggle/led/${led}`);
+        }
+    </script>
     </main>
     <footer>
         <p>Representación Frontal y Visual de Datos</p>
         <p>Computadoras de Aeronaves</p>
-        <p>Alumno XX</p>
+        <p>Alumno: Rodriguez Vanini Tobias</p>
         <p>Prof. Carlassara Fabrizio</p>
         <p id="fecha"></p>
+
     </footer>
     <script src="scripts/base.js"></script>
 </body>
