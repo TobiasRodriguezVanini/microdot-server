@@ -13,19 +13,16 @@
     </header>
     <main>
 
-    <img src="images/sensei closs.jpg" alt="sensei closs" class="sensei">
-
-    <div class="led-control-container">
-        <img src="images/megadeth.jpg" alt="mega de mega de" class="mega">
-
-        <div id="outer">
-            <br /><br /><br />
-             <!-- Alternar el estado de los LEDs -->
-            <button onclick="toggleLED(1)">Toggle LED 1</button>
-            <button onclick="toggleLED(2)">Toggle LED 2</button>
-            <button onclick="toggleLED(3)">Toggle LED 3</button>
-        </div>
-    </div>
+<!-- Contenedor de los botones -->
+<div id="outer">
+    <br /><br /><br />
+    <div class="button_slide slide_left botones" onclick="toggleLed(1)">LED1</div>
+    <br /><br /><br />
+    <div class="button_slide slide_left botones" onclick="toggleLed(2)">LED2</div>
+    <br /><br /><br />
+    <div class="button_slide slide_left botones" onclick="toggleLed(3)">LED3</div>
+</div>
+</div>
 
     <script>
         function toggleLed(led) {
@@ -38,7 +35,7 @@
         <p>Computadoras de Aeronaves</p>
         <p>Alumno: Rodriguez Vanini Tobias</p>
         <p>Prof. Carlassara Fabrizio</p>
-        <p id="fecha"></p>
+        <p id="fecha">1/11</p>
 
     </footer>
     <script src="scripts/base.js"></script>

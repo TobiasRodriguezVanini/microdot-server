@@ -2,19 +2,19 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f8ff;
-    color: #000080;
+    background-color: #000000;
+    color: #ff8800;
 }
 
 header {
-    background-color: #176fc7;
+    background-color: #ff9100;
     padding: 20px 0;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 main {
@@ -22,8 +22,8 @@ main {
 }
 
 footer {
-    background-color: #176fc7;
-    color: white;
+    background-color: #ff9100;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 10px 0;
     position: fixed;
@@ -34,3 +34,15 @@ footer {
 footer p {
     margin: 5px 0;
 }
+
+.button_slide {
+    color: #fffefe;
+    border: 2px solid #ff9100;
+    border-radius: 0px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 30px;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
