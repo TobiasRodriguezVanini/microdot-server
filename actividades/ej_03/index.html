@@ -3,22 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actividad #</title>
+    <title>Actividad 3</title>
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <header>
-        <h1>Actividad #</h1>
+        <h1>Actividad 3</h1>
     </header>
     <main>
+
+    <div class="led-control-container">
+        
+        <!-- Mostrar temperatura-->
+        <div id="temperature-display"> 
+            Temperatura: <span id="temperatura">0</span>°C
+        </div>
+
+        <!-- Slider para setear temperatura -->
+        <label for="temperature-slider">Setear temperatura:</label>
+        <input type="range" id="temperature-slider" name="temperature-slider" min="0" max="100" value="0" oninput="updateTemperatura(this.value)">
+        <span id="temperature_slider_value">0</span>°C
+
+        <!-- Estado del Buzzer -->
+
+        <div id="estado-buzzer">
+
+            Buzzer: <span id="buzzer-state">OFF</span>
+
+        </div>
+
+    </div>
+    
+
+    <script>
+        function toggleLed(led) {
+            fetch(`/toggle/led/${led}`);
+        }
+    </script>
+
+
+
     </main>
     <footer>
         <p>Representación Frontal y Visual de Datos</p>
         <p>Computadoras de Aeronaves</p>
-        <p>Alumno XX</p>
+        <p>Alumno Rodriguez Vanini Tobias</p>
         <p>Prof. Carlassara Fabrizio</p>
-        <p id="fecha"></p>
+        <p id="fecha">26/11</p>
+
     </footer>
     <script src="scripts/base.js"></script>
+    <script src="scripts/index.js"></script>
 </body>
 </html>

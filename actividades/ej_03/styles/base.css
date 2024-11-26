@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #f0f8ff;
     color: #000080;
+    min-width: 100vw;
 }
 
 header {
@@ -26,7 +27,7 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
